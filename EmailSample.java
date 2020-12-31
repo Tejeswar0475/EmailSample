@@ -25,9 +25,9 @@ public class EmailSample {
 		Matcher matchUC22=patternUC2.matcher("tejeswar-12782@yahoo.com");
 		boolean emailUC22=matchUC22.matches();
 		System.out.println("UC2 Email2: "+emailUC22);
-		
-		
-		//UC3 
+
+
+		//UC3
 		Pattern patternUC3=Pattern.compile("[a-zA-Z]{3,}(.{1}[0-9]{1,})@[a-z]{5,}.[a-z]{3,}");
 		Matcher matchUC3=patternUC3.matcher("abc.123@gmail.com");
 		boolean emailUC3=matchUC3.matches();
@@ -35,7 +35,7 @@ public class EmailSample {
 		Matcher matchUC33=patternUC3.matcher("tejeswar.3839@gmail.com");
 		boolean emailUC33=matchUC33.matches();
 		System.out.println("UC3 Email2: "+emailUC33);
-		
+
 		//UC4
 		Pattern patternUC4=Pattern.compile("([A-Za-z0-9]){3,}@[a-z]{5,}.[a-z]{2,}");
 		Matcher matchUC4=patternUC4.matcher("abc111@gmail.com");
@@ -44,7 +44,15 @@ public class EmailSample {
 		Matcher matchUC44=patternUC4.matcher("Tejeswar121@yahoo.com");
 		boolean emailUC44=matchUC44.matches();
 		System.out.println("UC4 Email2: "+emailUC44);
-		
-		
+
+		//UC5
+		Pattern patternUC5=Pattern.compile("[a-zA-Z]{3,}(-{1})[0-9]{1,}@[a-z]{5,}.[a-z]{3,}");
+		Matcher matchUC5=patternUC5.matcher("abc-100@abc.net");
+		boolean emailUC5=matchUC5.matches();
+		System.out.println("UC5 Email1: "+emailUC4);
+		Matcher matchUC55=patternUC5.matcher("tejeswar-211@yahoo.net");
+		boolean emailUC55=matchUC55.matches();
+		System.out.println("UC5 Email2: "+emailUC55);
+
 	}
 }
