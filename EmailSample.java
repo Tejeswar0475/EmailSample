@@ -70,6 +70,18 @@ public class EmailSample {
 		Matcher matchUC77=patternUC7.matcher("tejeswar@322.com");
 		boolean emailUC77=matchUC77.matches();
 		System.out.println("UC7 Email2: "+emailUC77);
+		
+		
+		//UC8  
+		Pattern patternUC8=Pattern.compile("[a-zA-Z]{3,}@[a-z0-9]{1,}.[a-z]{3,}.[a-z]{3,}");
+		Matcher matchUC8=patternUC8.matcher("abc@gmail.com.com");
+		boolean emailUC8=matchUC8.matches();
+		System.out.println("UC8 Email1: "+emailUC8);
+		Matcher matchUC88=patternUC8.matcher("tejeswarV@gmail.com.com");
+		boolean emailUC88=matchUC88.matches();
+		System.out.println("UC8 Email2: "+emailUC88);
+		
+		
 
 
 	}
